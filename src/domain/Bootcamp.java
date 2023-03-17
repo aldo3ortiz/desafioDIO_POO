@@ -6,66 +6,137 @@ import java.util.LinkedHashSet;
 import java.util.Objects;
 import java.util.Set;
 
+/**
+ * Bootcamp deals with the bootcamp programs
+ * (program's name, description, starting and final date)
+ */
 public class Bootcamp {
 
+    /**
+     * Attribute name holds the name of a program
+     */
     private String name;
+
+    /**
+     * Attribute description holds the details of a program
+     */
     private String description;
+
+    /**
+     * Attribute startDate holds the starting date of a program.
+     * It grabs the current date (LocalDate.now) when a new object is instantiated
+     */
     private final LocalDate startDate = LocalDate.now();
+
+    /**
+     * Attribute finalDate holds the final date of a program.
+     * It is setup in days when a new object is instantiated
+     */
     private final LocalDate finalDate = startDate.plusDays(45);
 
+    /**
+     * enrolledBootcamp is a Set that holds the enrolled bootcamp a dev is taking
+     */
     private Set<Dev> enrolledBootcamp = new HashSet<>();
+
+    /**
+     * contentsBootcamp is a Set that holds the bootcamp's contents
+     */
     private Set<Content> contentsBootcamp = new LinkedHashSet<>();
 
-    //SETTERS
+    /////////////////////////////////////////////////////////////////////////////////////////SETTERS
 
+    /**
+     * Sets a name for a bootcamp
+     * @param name
+     */
     public void setName(String name) {
         this.name = name;
     }
 
+    /**
+     * Sets a description for a bootcamp
+     * @param description
+     */
     public void setDescription(String description) {
         this.description = description;
     }
 
+    /**
+     * Sets the bootcamps a dev is enrolled in
+     * @param enrolledBootcamp
+     */
     public void setEnrolledBootcamp(Set<Dev> enrolledBootcamp) {
         this.enrolledBootcamp = enrolledBootcamp;
     }
 
+    /**
+     * Sets the contents of a bootcamp
+     * @param contentsBootcamp
+     */
     public void setContentsBootcamp(Set<Content> contentsBootcamp) {
         this.contentsBootcamp = contentsBootcamp;
     }
 
-    //GETTERS
+    /////////////////////////////////////////////////////////////////////////////////////////GETTERS
 
+    /**
+     * Gets a bootcamp's name
+     * @return name
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     * Gets a bootcamp's description
+     * @return description
+     */
     public String getDescription() {
         return description;
     }
 
+    /**
+     * Gets the bootcamps a dev is relloed in
+     * @return enrolldBootcamp
+     */
     public Set<Dev> getEnrolledBootcamp() {
         return enrolledBootcamp;
     }
 
+    /**
+     * Gets the contents from a bootcamp
+     * @return contentsBootcamp
+     */
     public Set<Content> getContentsBootcamp() {
         return contentsBootcamp;
     }
 
-    // GETTERS - DATES
+    /////////////////////////////////////////////////////////////////////////////////////////GETTERS - DATES
 
+    /**
+     * Gets the initial date for a bootcamp
+     * @return startDate
+     */
     public LocalDate getStartDate() {
         return startDate;
     }
 
+    /**
+     * Gets the final date for a bootcamp
+     * @return finalDate
+     */
     public LocalDate getFinalDate() {
         return finalDate;
     }
 
 
-    //toString
+    /////////////////////////////////////////////////////////////////////////////////////////toString
 
-
+    /**
+     * The toString method
+     * @return toString for bootcamp attributes
+     */
     @Override
     public String toString() {
         return "Bootcamp name..: " + name + "\n" +
@@ -76,6 +147,13 @@ public class Bootcamp {
                 "Contents.......: " + contentsBootcamp + "\n";
     }
 
+    /////////////////////////////////////////////////////////////////////////////////////////
+
+    /**
+     * The equals method
+     * @param o
+     * @return true or false
+     */
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -84,6 +162,10 @@ public class Bootcamp {
         return Objects.equals(name, bootcamp.name) && Objects.equals(description, bootcamp.description) && Objects.equals(startDate, bootcamp.startDate) && Objects.equals(finalDate, bootcamp.finalDate) && Objects.equals(enrolledBootcamp, bootcamp.enrolledBootcamp) && Objects.equals(contentsBootcamp, bootcamp.contentsBootcamp);
     }
 
+    /**
+     * The hashCode method
+     * @return the Objects.hash
+     */
     @Override
     public int hashCode() {
         return Objects.hash(name, description, startDate, finalDate, enrolledBootcamp, contentsBootcamp);
