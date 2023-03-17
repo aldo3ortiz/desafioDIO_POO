@@ -28,7 +28,7 @@ public class Mentoring extends Content {
 
     /**
      * Sets the date of a mentoring
-     * @param date
+     * @param date of a mentoring
      */
     public void setDate(LocalDate date){
         this.date = date;

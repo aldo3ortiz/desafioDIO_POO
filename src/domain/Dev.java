@@ -29,7 +29,7 @@ public class Dev {
 
     /**
      * Method to enroll the developer into a bootcamp
-     * @param bootcamp
+     * @param bootcamp the developer is into
      */
     public void enrollBootcamp(Bootcamp bootcamp){
         this.enrolledDev.addAll(bootcamp.getContentsBootcamp());
@@ -61,7 +61,7 @@ public class Dev {
 
     /**
      * Sets the name of a developer
-     * @param name
+     * @param name of a developer
      */
     public void setName(String name){
         this.name = name;
@@ -69,7 +69,7 @@ public class Dev {
 
     /**
      * Sets the enrollment of a developer
-     * @param enrolledDev
+     * @param enrolledDev of a developer
      */
     public void setEnrolledDev(Set<Content> enrolledDev){
         this.enrolledDev = enrolledDev;
@@ -77,7 +77,7 @@ public class Dev {
 
     /**
      * Sets the conclusion of a developer
-     * @param concludedDev
+     * @param concludedDev of a developer
      */
     public void setConcludedDev(Set<Content> concludedDev){
         this.concludedDev = concludedDev;
@@ -127,7 +127,7 @@ public class Dev {
 
     /**
      * The equals method
-     * @param o
+     * @param o Object
      * @return true or false
      */
     @Override

@@ -48,7 +48,7 @@ public class Bootcamp {
 
     /**
      * Sets a name for a bootcamp
-     * @param name
+     * @param name for a bootcamp
      */
     public void setName(String name) {
         this.name = name;
@@ -56,7 +56,7 @@ public class Bootcamp {
 
     /**
      * Sets a description for a bootcamp
-     * @param description
+     * @param description for a bootcamp
      */
     public void setDescription(String description) {
         this.description = description;
@@ -64,7 +64,7 @@ public class Bootcamp {
 
     /**
      * Sets the bootcamps a dev is enrolled in
-     * @param enrolledBootcamp
+     * @param enrolledBootcamp a dev is enrolled in
      */
     public void setEnrolledBootcamp(Set<Dev> enrolledBootcamp) {
         this.enrolledBootcamp = enrolledBootcamp;
@@ -72,7 +72,7 @@ public class Bootcamp {
 
     /**
      * Sets the contents of a bootcamp
-     * @param contentsBootcamp
+     * @param contentsBootcamp for the contents of a bootcamp
      */
     public void setContentsBootcamp(Set<Content> contentsBootcamp) {
         this.contentsBootcamp = contentsBootcamp;
@@ -82,23 +82,23 @@ public class Bootcamp {
 
     /**
      * Gets a bootcamp's name
-     * @return name
+     * @return name of a bootcamp
      */
     public String getName() {
         return name;
     }
 
     /**
-     * Gets a bootcamp's description
-     * @return description
+     * Gets a description of a bootcamp
+     * @return description of a bootcamp
      */
     public String getDescription() {
         return description;
     }
 
     /**
-     * Gets the bootcamps a dev is relloed in
-     * @return enrolldBootcamp
+     * Gets the bootcamps a dev is enrolled in
+     * @return enrolldBootcamp a dev is enrolled in
      */
     public Set<Dev> getEnrolledBootcamp() {
         return enrolledBootcamp;
@@ -151,7 +151,7 @@ public class Bootcamp {
 
     /**
      * The equals method
-     * @param o
+     * @param o Object
      * @return true or false
      */
     @Override

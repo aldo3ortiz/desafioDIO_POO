@@ -32,7 +32,7 @@ public abstract class Content {
 
     /**
      * Sets the title of a content
-     * @param title
+     * @param title of a content
      */
     public void setTitle(String title){
         this.title = title;
@@ -40,7 +40,7 @@ public abstract class Content {
 
     /**
      * Sets the description of a content
-     * @param description
+     * @param description of a content
      */
     public void setDescription(String description){
         this.description = description;

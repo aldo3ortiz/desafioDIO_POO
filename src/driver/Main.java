@@ -14,7 +14,7 @@ public class Main {
 
     /**
      * DesafioDIO_POO main method
-     * @param args
+     * @param args for java arguments
      */
     public static void main(String[] args) {
 

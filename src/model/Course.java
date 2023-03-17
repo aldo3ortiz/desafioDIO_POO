@@ -27,7 +27,7 @@ public class Course extends Content {
 
     /**
      * Sets the workload of a course
-     * @param workload
+     * @param workload of a course
      */
     public void setWorkload(int workload){
         this.workload = workload;
